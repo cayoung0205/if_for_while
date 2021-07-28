@@ -85,3 +85,55 @@ while <조건문> :  ## 조건문이 항상 참일 경우, 무한 루프
 	<코드 블럭>
 ```
 
+### roop 탈출 
+### Break VS continue
+
+> 반복문에서 빠져나오는 코드
+
+#### Break
+
+- 조건에 맞으면 코드에서 탈출
+- **끝내기**
+
+#### continue
+
+- 조건에 맞으면 코드에서 탈출
+- **재반복**
+
+
+
+```python
+k = 0
+while True :
+	k = k + 1 ## 1씩 값을 증가
+	if(조건) :## 조건에 일치하면
+		break ## if문을 빠져나옴
+	print(출력내용)
+```
+
+
+
+```python
+for <변수1> in <변수범위> :
+	if <조건> : ## 조건과 일치하면
+		continue ## 처음으로 돌아가서 다음 반복 실행
+	
+	print(<변수1>) ## 조건과 일치한 변수1만 빼고 출력
+```
+
+
+
+### 한 줄 for 문 (python)
+
+- List comprehension
+
+  `[<반복 실행문> for <반복 변수> in <반복 범위>]`
+
+  `[<반복 실행문> for <반복 변수> in <반복 범위> if <조건문>]`
+
+- Set comprehension
+
+- Dictionary comprehension
+
+
+
